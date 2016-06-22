@@ -20,14 +20,20 @@
     </script>
   </head>
   <body>
-    <iframe id="video" src="http://www.youtube.com/embed/XlWMp25v8-w?autoplay=1&loop=1&playlist=XlWMp25v8-w" frameborder="0" allowfullscreen></iframe>
+    <video src="res/video/rana.webm" id="video" autoplay loop></video>
+
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
     <script>
       $(function(){
-        $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+        function resize(){
+          $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+        };
+
+        resize();
 
         $(window).resize(function(){
-          $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+          resize();
         });
       });
     </script>
