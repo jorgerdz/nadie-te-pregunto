@@ -1,2 +1,2 @@
 # nadie-te-pregunto
-nadietepregunto.xyz
+https://jorgerdz.github.io/nadie-te-pregunto/
